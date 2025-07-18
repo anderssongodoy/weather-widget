@@ -1,5 +1,25 @@
-# Vue 3 + TypeScript + Vite
+# Weather Widget
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## Descripción
+Widget de clima modular y escalable en Vue 3 (Composition API). Permite consultar el clima actual de cualquier ciudad usando una API pública.
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+## Instalación y ejecución
+
+1. Instala dependencias:
+   ```
+npm install
+   ```
+2. Corre el servidor de desarrollo:
+   ```
+npm run dev
+   ```
+3. Accede a `http://localhost:5173/weather` para ver el widget.
+
+## Estructura del proyecto
+- `src/modules/weather/` — Módulo del widget de clima
+- `src/router.ts` — Configuración de rutas
+- `decisiones.md` — Documentación de decisiones técnicas (no se sube a git)
+
+## Notas
+- El archivo `.env` debe contener tu API key de OpenWeatherMap.
+- Cada decisión de arquitectura está documentada en `decisiones.md`.
