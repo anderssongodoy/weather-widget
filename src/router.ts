@@ -4,7 +4,7 @@ const routes = [
   {
     path: '/weather',
     name: 'Weather',
-    component: () => import('./modules/weather/WeatherWidget.vue'),
+    component: () => import('./modules/weather/components/WeatherWidget.vue'),
   },
 ];
 
