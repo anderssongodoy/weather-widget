@@ -11,11 +11,11 @@ Widget de clima modular y escalable en Vue 3 (Composition API + Vite + Tailwind)
    ```
 2. Crea un archivo `.env` en la raíz con:
    ```
-   VITE_OPENWEATHER_API_KEY=tu_api_key_openweather
+   VITE_OPENWEATHER_API_KEY=ef137c999a24110b1dc769f7360d0f5a
    VITE_OPENWEATHER_BASE_URL=https://api.openweathermap.org/data/2.5/weather
-   VITE_WEATHERAPI_KEY=tu_api_key_weatherapi
+   VITE_WEATHERAPI_KEY=2560b64a163343a996081921251807
    VITE_WEATHERAPI_BASE_URL=https://api.weatherapi.com/v1/current.json
-   VITE_GEODB_API_KEY=tu_api_key_geodb
+   VITE_GEODB_API_KEY=a6f3310a84msh6a98bbc9eea98fcp191263jsn9f0885b68782
    ```
 3. Inicia el servidor de desarrollo:
    ```
