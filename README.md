@@ -1,33 +1,34 @@
 # Weather Widget
 
-## Description
-A scalable, modular Vue 3 (Composition API + Vite + Tailwind) weather widget. Enter a city and get the current temperature and weather feeling using OpenWeatherMap.
+## Descripción
+Widget de clima modular y escalable en Vue 3 (Composition API + Vite + Tailwind). Permite consultar el clima actual de cualquier ciudad usando una API pública.
 
-## Getting Started
+## Instalación y uso
 
-1. Install dependencies:
+1. Instala las dependencias:
    ```
    npm install
    ```
-2. Create a `.env` file in the root with:
+2. Crea un archivo `.env` en la raíz con:
    ```
-   VITE_OPENWEATHER_API_KEY=your_api_key_here
+   VITE_OPENWEATHER_API_KEY=tu_api_key_openweather
    VITE_OPENWEATHER_BASE_URL=https://api.openweathermap.org/data/2.5/weather
+   VITE_WEATHERAPI_KEY=tu_api_key_weatherapi
+   VITE_WEATHERAPI_BASE_URL=https://api.weatherapi.com/v1/current.json
    ```
-3. Run the dev server:
+3. Inicia el servidor de desarrollo:
    ```
    npm run dev
    ```
-4. Visit `http://localhost:5173/weather`
+4. Accede a `http://localhost:5173/weather` para ver el widget.
 
-## Project Structure
+## Estructura del proyecto
 
-- `src/modules/weather/components/WeatherWidget.vue` — UI component
-- `src/modules/weather/composables/useWeather.ts` — Weather logic (state, actions)
-- `src/modules/weather/services/weatherApi.ts` — API calls
-- `.env` — Environment variables (API key, base URL)
-- `decisiones.md` — Architectural decisions (not tracked in git)
+- `src/modules/weather/components/WeatherWidget.vue` — Componente de UI
+- `src/modules/weather/composables/useWeather.ts` — Lógica y estado del clima
+- `src/modules/weather/services/weatherApi.ts` — Llamadas a APIs de clima
+- `.env` — Variables de entorno (API keys y URLs)
 
-## Notes
-- All business logic and API calls are modularized for scalability and maintainability.
-- See `decisiones.md` for architectural reasoning and decisions.
+## Notas
+- Toda la lógica y llamadas a APIs están modularizadas para facilitar el mantenimiento y la escalabilidad.
+- El diseño es limpio y responsivo gracias a Tailwind CSS.
